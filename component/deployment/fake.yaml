@@ -1,0 +1,12 @@
+apiVersion: dapr.io/v1alpha1
+kind: Component
+metadata:
+  name: fake-mystore
+spec:
+  type: state.fake-component
+  version: v1
+  metadata:
+  - name: host
+    value: "empty"
+scopes:
+  - my-app

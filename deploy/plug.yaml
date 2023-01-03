@@ -1,0 +1,13 @@
+apiVersion: dapr.io/v1alpha1
+kind: Component
+metadata:
+  name: prod-mystore
+  namespace: pcomp
+spec:
+  type: state.my-component
+  version: v1
+  metadata:
+  - name: host
+    value: "empty"
+scopes:
+  - my-app
